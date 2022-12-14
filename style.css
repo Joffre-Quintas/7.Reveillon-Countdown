@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/festa-reveillon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.coming-soon{
+    background-color: rgba(0, 0, 0, 0.604);
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.countdown{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    text-align: center;
+}
+.div-days,.div-hours,.div-minutes,.div-seconds{
+    background-color: rgba(0, 0, 0, 0.601);
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    height: 120px;
+    
+}
+h1,h2{
+    font-size: calc(22px + 2vw);
+}
+p{
+    font-size: calc(14px + 2vh);
+}
+h2,p{
+    text-shadow: 0px 0px 5px;
+}
