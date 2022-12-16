@@ -17,13 +17,13 @@ let countDaysPerMonth = ()=>{
     case 2:
         return 31
         break;
-        //Ano Bissexto
     case 3:
         if(currentYear%4 == 0){
             return 60;
         }else{
             return 59;
         }
+        //Ano Bissexto
         break;
     case 4:
         return 90;
@@ -50,14 +50,14 @@ let countDaysPerMonth = ()=>{
         return 304;
         break;
     case 12:
-        return 336;
+        return 334;
         break;
    } 
 }
 
 // POS[0] = MONTH, POS[1] = DAY, POS[2] = HOUR, POS[3] = MINUTE, POS[4] = SECOND
 const dateRemaining = [
-    finalDay - (data.getDate()-1)-(countDaysPerMonth()),
+    finalDay - (data.getDate())-(countDaysPerMonth()),
     finalHours - data.getHours(),
     finalMinutes - data.getMinutes(),
     finalSeconds - data.getSeconds()
